@@ -505,12 +505,22 @@ void SVG_plot( std::string filename , Microenvironment& M, double z_slice , doub
 
 			os << "   <g id=\"cell" << pC->ID << "\">" << std::endl; 
   
+			
+			//target volume radius
+			double target_volume_solid=((pC->phenotype.volume.target_solid_cytoplasmic)+(pC->phenotype.volume.target_solid_nuclear));
+			double target_volume=target_volume_solid/(1-( pC->phenotype.volume.target_fluid_fraction));
+			
+			double t_r=pow( target_volume/4.188790204786391,  0.333333333333333333333333333333333333333);
+			
+			
 			// figure out how much of the cell intersects with z = 0 
    
 			double plot_radius = sqrt( r*r - z*z ); 
-
+			double target_radius=sqrt( t_r*t_r - z*z );
 			Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
-				plot_radius , 0.5, Colors[1], Colors[0] ); 
+				plot_radius , 0.5, Colors[1], Colors[0] );
+			Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
+				target_radius , 0.5, "red", "rgba(1,0,0,0.0)" );				
 
 			// plot the nucleus if it, too intersects z = 0;
 			if( fabs(z) < rn && PhysiCell_SVG_options.plot_nuclei == true )

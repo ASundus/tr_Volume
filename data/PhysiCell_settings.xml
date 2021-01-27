@@ -74,10 +74,10 @@
 
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-100</x_min>
-		<x_max>100</x_max>
-		<y_min>-100</y_min>
-		<y_max>100</y_max>
+		<x_min>-30</x_min>
+		<x_max>30</x_max>
+		<y_min>-30</y_min>
+		<y_max>30</y_max>
 		<z_min>-10</z_min>
 		<z_max>10</z_max>
 		<dx>10</dx>
@@ -143,18 +143,19 @@
 		<!-- example parameters from the template --> 
 		
 		<!-- motile cell type parameters --> 
-		<Volume_Parameters type="string" Description="Modifying these variables will affect the volume of cells in simulation" >"Parameters"</Volume_Parameters >
+		<!--Volume_Parameters type="string" description="Modifying these variables will affect the volume of cells in simulation" >"Parameters"</Volume_Parameters -->
 		
-		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">488.5</Volume_target_solid_cytoplasmic>
-		<Volume_target_solid_nuclear type="double" units="cubic_micron">135.0</Volume_target_solid_nuclear>
+		<div_initialization type="divider" description="---Parameters---"/>
+		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">1488.5</Volume_target_solid_cytoplasmic>
+		<Volume_target_solid_nuclear type="double" units="cubic_micron">1135.0</Volume_target_solid_nuclear>
 		<Volume_target_fluid_fraction type="double" units="cubic_micron">0.75</Volume_target_fluid_fraction>
 		<Volume_cytoplasmic_biomass_change_rate type="double" units="cubic_micron/min">0.0045</Volume_cytoplasmic_biomass_change_rate>
 		<Volume_nuclear_biomass_change_rate type="double" units="cubic_micron/min">0.0055</Volume_nuclear_biomass_change_rate>
 		<Volume_fluid_change_rate type="double" units="cubic_micron/min">0.05</Volume_fluid_change_rate>
 		<Volume_calcification_rate type="double" units="cubic_micron/min">0.0</Volume_calcification_rate>
 		
-		<Volume_State_Variables type="string" Description="Modifying these variables will affect the volume of cells temporarily and cells will go back to steady state volume" >"State Variables"</Volume_State_Variables>
-		
+		<!--Volume_State_Variables type="string" Description="Modifying these variables will affect the volume of cells temporarily and cells will go back to steady state volume" >"State Variables"</Volume_State_Variables-->
+		<div_initialization type="divider" description="---State Variables---"/>
 		<Volume_Total type="double" units="cubic_micron">2494</Volume_Total>
 		<Volume_solid type="double" units="cubic_micron">623.5</Volume_solid>
 		<Volume_fluid type="double" units="cubic_micron">1870.5</Volume_fluid>
@@ -171,9 +172,9 @@
 		
 		<Volume_relative_rupture_volume type="double" units="none" hidden="true">2.0</Volume_relative_rupture_volume>
 		<Volume_rupture_volume type="double" units="cubic_micron" hidden="true">4988</Volume_rupture_volume>
-		
-		<use_function_multiply_by_ratio type="bool" Description="recommended method to change volume in your simulation">false</use_function_multiply_by_ratio>
-		<multiplication_ratio_value type="double" Description="multiplies all parameters accordingly to scale current volume" >2.0</multiplication_ratio_value>
+		<div_initialization type="divider" description="---Method to change all Volume parameters consistenly ---"/>
+		<use_function_multiply_by_ratio type="bool" description="recommended method to change volume in your simulation">false</use_function_multiply_by_ratio>
+		<multiplication_ratio_value type="double" description="multiplies all parameters accordingly to scale current volume" >2.0</multiplication_ratio_value>
 		
 		
 

@@ -282,13 +282,13 @@ std::vector<std::string> my_coloring_function( Cell* pCell )
 		
     if( pCell->phenotype.death.dead == false && pCell->type == 1 )
 	{
-		int cfluid = (int) round(255* ((pCell->phenotype.volume.cytoplasmic_fluid)/(pCell->phenotype.volume.cytoplasmic))  ); 
+		double cfluid = ((pCell->phenotype.volume.cytoplasmic_fluid)/(pCell->phenotype.volume.cytoplasmic))  ; 
 		char szTempString [128];
-		sprintf( szTempString , "rgb(%u,%u,%u)",0, 0, cfluid);
+		sprintf( szTempString , "rgba(%u,%u,%u,%f)",0,0,255*cfluid, cfluid);
 		output[0].assign( szTempString );
 		output[1].assign( szTempString );
-		int nfluid = (int) round (255 * ((pCell->phenotype.volume.nuclear_fluid / pCell->phenotype.volume.nuclear))  ); 
-		sprintf( szTempString , "rgb(%u,%u,%u)", 0 , nfluid , 0 );
+		double nfluid = ((pCell->phenotype.volume.nuclear_fluid / pCell->phenotype.volume.nuclear)) ; 
+		sprintf( szTempString , "rgba(%u,%u,%u,%f)", 0 , 255*nfluid,0,nfluid );
 		output[2].assign( szTempString );
 		output[3].assign( szTempString );
 		
