@@ -172,7 +172,7 @@
 		
 		<Volume_relative_rupture_volume type="double" units="none" hidden="true">2.0</Volume_relative_rupture_volume>
 		<Volume_rupture_volume type="double" units="cubic_micron" hidden="true">4988</Volume_rupture_volume>
-		<div_initialization type="divider" description="---Method to change all Volume parameters consistenly ---"/>
+		<div_initialization type="divider" description="---Method to change all Volume parameters consistently ---"/>
 		<use_function_multiply_by_ratio type="bool" description="recommended method to change volume in your simulation">false</use_function_multiply_by_ratio>
 		<multiplication_ratio_value type="double" description="multiplies all parameters accordingly to scale current volume" >2.0</multiplication_ratio_value>
 		
