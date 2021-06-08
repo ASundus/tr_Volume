@@ -284,13 +284,21 @@ std::vector<std::string> my_coloring_function( Cell* pCell )
 	{
 		double cfluid = ((pCell->phenotype.volume.cytoplasmic_fluid)/(pCell->phenotype.volume.cytoplasmic))  ; 
 		char szTempString [128];
-		sprintf( szTempString , "rgb(%u,%u,%u)",0,0,(int) (255*cfluid));
+		sprintf( szTempString , "rgb(%d,%d,%d)",0,0,int(255*cfluid));
 		output[0].assign( szTempString );
 		output[1].assign( szTempString );
 		double nfluid = ((pCell->phenotype.volume.nuclear_fluid / pCell->phenotype.volume.nuclear)) ; 
-		sprintf( szTempString , "rgb(%u,%u,%u)", 0 , (int )(255*nfluid,0 ));
+		sprintf( szTempString , "rgb(%d,%d,%d)", 0 , int(255*nfluid),0 );
 		output[2].assign( szTempString );
 		output[3].assign( szTempString );
+		
+		//output[0]="red";
+		//output[1]="blue";
+	//	output[2]="green";
+		
+	//	output[3]="brown";
+		
+		
 		
 		return output;  
 	}

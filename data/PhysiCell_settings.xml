@@ -146,28 +146,28 @@
 		<!--Volume_Parameters type="string" description="Modifying these variables will affect the volume of cells in simulation" >"Parameters"</Volume_Parameters -->
 		
 		<div_initialization type="divider" description="---Parameters---"/>
-		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">1488.5</Volume_target_solid_cytoplasmic>
-		<Volume_target_solid_nuclear type="double" units="cubic_micron">1135.0</Volume_target_solid_nuclear>
-		<Volume_target_fluid_fraction type="double" units="cubic_micron">0.75</Volume_target_fluid_fraction>
-		<Volume_cytoplasmic_biomass_change_rate type="double" units="cubic_micron/min">0.0045</Volume_cytoplasmic_biomass_change_rate>
-		<Volume_nuclear_biomass_change_rate type="double" units="cubic_micron/min">0.0055</Volume_nuclear_biomass_change_rate>
-		<Volume_fluid_change_rate type="double" units="cubic_micron/min">0.05</Volume_fluid_change_rate>
-		<Volume_calcification_rate type="double" units="cubic_micron/min">0.0</Volume_calcification_rate>
+		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron" description="default=1488.5">1488.5</Volume_target_solid_cytoplasmic>
+		<Volume_target_solid_nuclear type="double" units="cubic_micron"  description="default=1135.0">1135.0</Volume_target_solid_nuclear>
+		<Volume_target_fluid_fraction type="double" units="cubic_micron"  description="default=0.75">0.75</Volume_target_fluid_fraction>
+		<Volume_cytoplasmic_biomass_change_rate type="double" units="1/min"  description="default=0.0045">0.0045</Volume_cytoplasmic_biomass_change_rate>
+		<Volume_nuclear_biomass_change_rate type="double" units="1/min"  description="default=0.0055">0.0055</Volume_nuclear_biomass_change_rate>
+		<Volume_fluid_change_rate type="double" units="1/min"  description="default=0.05">0.05</Volume_fluid_change_rate>
+		<Volume_calcification_rate type="double" units="1/min"  description="default=0.0">0.0</Volume_calcification_rate>
 		
 		<!--Volume_State_Variables type="string" Description="Modifying these variables will affect the volume of cells temporarily and cells will go back to steady state volume" >"State Variables"</Volume_State_Variables-->
 		<div_initialization type="divider" description="---State Variables---"/>
-		<Volume_Total type="double" units="cubic_micron">2494</Volume_Total>
-		<Volume_solid type="double" units="cubic_micron">623.5</Volume_solid>
-		<Volume_fluid type="double" units="cubic_micron">1870.5</Volume_fluid>
-		<Volume_fluid_fraction type="double" units="none">0.75</Volume_fluid_fraction>
-		<Volume_nuclear type="double" units="cubic_micron">540.0</Volume_nuclear>
-		<Volume_nuclear_solid type="double" units="cubic_micron">135.0</Volume_nuclear_solid>
-		<Volume_nuclear_fluid type="double" units="cubic_micron">405.0</Volume_nuclear_fluid>
-		<Volume_cytoplasmic type="double" units="cubic_micron">1954.0</Volume_cytoplasmic>
-		<Volume_cytoplasmic_solid type="double" units="cubic_micron">488.5</Volume_cytoplasmic_solid>
-		<Volume_cytoplasmic_fluid type="double" units="cubic_micron">1465.5</Volume_cytoplasmic_fluid>
-		<Volume_clacification_fraction type="double" units="none">0.0</Volume_clacification_fraction>
-		<Volume_cytoplasmic_to_nuclear_ratio type="double" units="none">3.6</Volume_cytoplasmic_to_nuclear_ratio>
+		<Volume_Total type="double" units="cubic_micron"  description="default=2494">2494</Volume_Total>
+		<Volume_solid type="double" units="cubic_micron"  description="default=623.5">623.5</Volume_solid>
+		<Volume_fluid type="double" units="cubic_micron"  description="default=1870.5">1870.5</Volume_fluid>
+		<Volume_fluid_fraction type="double" units="none"  description="default=0.75">0.75</Volume_fluid_fraction>
+		<Volume_nuclear type="double" units="cubic_micron"  description="default=540.0">540.0</Volume_nuclear>
+		<Volume_nuclear_solid type="double" units="cubic_micron"  description="default=135.0">135.0</Volume_nuclear_solid>
+		<Volume_nuclear_fluid type="double" units="cubic_micron"  description="default=405.0">405.0</Volume_nuclear_fluid>
+		<Volume_cytoplasmic type="double" units="cubic_micron"  description="default=1954.0">1954.0</Volume_cytoplasmic>
+		<Volume_cytoplasmic_solid type="double" units="cubic_micron"  description="default=488.5">488.5</Volume_cytoplasmic_solid>
+		<Volume_cytoplasmic_fluid type="double" units="cubic_micron"  description="default=1465.5">1465.5</Volume_cytoplasmic_fluid>
+		<Volume_clacification_fraction type="double" units="none"  description="default=0.0">0.0</Volume_clacification_fraction>
+		<Volume_cytoplasmic_to_nuclear_ratio type="double" units="none"  description="default=3.6">3.6</Volume_cytoplasmic_to_nuclear_ratio>
 
 		
 		<Volume_relative_rupture_volume type="double" units="none" hidden="true">2.0</Volume_relative_rupture_volume>

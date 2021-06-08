@@ -519,8 +519,7 @@ void SVG_plot( std::string filename , Microenvironment& M, double z_slice , doub
 			double target_radius=sqrt( t_r*t_r - z*z );
 			Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
 				plot_radius , 0.5, Colors[1], Colors[0] );
-			Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
-				target_radius , 0.5, "red", "rgba(1,0,0,0.0)" );				
+							
 
 			// plot the nucleus if it, too intersects z = 0;
 			if( fabs(z) < rn && PhysiCell_SVG_options.plot_nuclei == true )
@@ -528,7 +527,11 @@ void SVG_plot( std::string filename , Microenvironment& M, double z_slice , doub
 				plot_radius = sqrt( rn*rn - z*z ); 
 			 	Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
 					plot_radius, 0.5, Colors[3],Colors[2]); 
-			}					  
+			}
+			
+			
+			//Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
+			//	target_radius , 0.5, "red", "rgb(1,0,0,)" );					  
 			os << "   </g>" << std::endl;
 		}
 	}

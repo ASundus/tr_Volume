@@ -22,7 +22,6 @@ class UserTab(object):
 
         name_button_layout={'width':'25%'}
         widget_layout = {'width': '15%'}
-        widget2_layout = {'width': '10%'}
         units_button_layout ={'width':'15%'}
         desc_button_layout={'width':'45%'}
         divider_button_layout={'width':'40%'}
@@ -208,13 +207,13 @@ class UserTab(object):
         units_button3.style.button_color = 'lightgreen'
         units_button4 = Button(description='cubic_micron', disabled=True, layout=units_button_layout) 
         units_button4.style.button_color = 'tan'
-        units_button5 = Button(description='cubic_micron/min', disabled=True, layout=units_button_layout) 
+        units_button5 = Button(description='1/min', disabled=True, layout=units_button_layout) 
         units_button5.style.button_color = 'lightgreen'
-        units_button6 = Button(description='cubic_micron/min', disabled=True, layout=units_button_layout) 
+        units_button6 = Button(description='1/min', disabled=True, layout=units_button_layout) 
         units_button6.style.button_color = 'tan'
-        units_button7 = Button(description='cubic_micron/min', disabled=True, layout=units_button_layout) 
+        units_button7 = Button(description='1/min', disabled=True, layout=units_button_layout) 
         units_button7.style.button_color = 'lightgreen'
-        units_button8 = Button(description='cubic_micron/min', disabled=True, layout=units_button_layout) 
+        units_button8 = Button(description='1/min', disabled=True, layout=units_button_layout) 
         units_button8.style.button_color = 'tan'
         units_button9 = Button(description='', disabled=True, layout=units_button_layout) 
         units_button9.style.button_color = 'tan'
@@ -249,43 +248,43 @@ class UserTab(object):
         units_button24 = Button(description='', disabled=True, layout=units_button_layout) 
         units_button24.style.button_color = 'tan'
 
-        desc_button2 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button2 = Button(description='default=1488.5' , tooltip='default=1488.5', disabled=True, layout=desc_button_layout) 
         desc_button2.style.button_color = 'tan'
-        desc_button3 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button3 = Button(description='default=1135.0' , tooltip='default=1135.0', disabled=True, layout=desc_button_layout) 
         desc_button3.style.button_color = 'lightgreen'
-        desc_button4 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button4 = Button(description='default=0.75' , tooltip='default=0.75', disabled=True, layout=desc_button_layout) 
         desc_button4.style.button_color = 'tan'
-        desc_button5 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button5 = Button(description='default=0.0045' , tooltip='default=0.0045', disabled=True, layout=desc_button_layout) 
         desc_button5.style.button_color = 'lightgreen'
-        desc_button6 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button6 = Button(description='default=0.0055' , tooltip='default=0.0055', disabled=True, layout=desc_button_layout) 
         desc_button6.style.button_color = 'tan'
-        desc_button7 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button7 = Button(description='default=0.05' , tooltip='default=0.05', disabled=True, layout=desc_button_layout) 
         desc_button7.style.button_color = 'lightgreen'
-        desc_button8 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button8 = Button(description='default=0.0' , tooltip='default=0.0', disabled=True, layout=desc_button_layout) 
         desc_button8.style.button_color = 'tan'
-        desc_button9 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button9 = Button(description='default=2494' , tooltip='default=2494', disabled=True, layout=desc_button_layout) 
         desc_button9.style.button_color = 'lightgreen'
-        desc_button10 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button10 = Button(description='default=623.5' , tooltip='default=623.5', disabled=True, layout=desc_button_layout) 
         desc_button10.style.button_color = 'tan'
-        desc_button11 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button11 = Button(description='default=1870.5' , tooltip='default=1870.5', disabled=True, layout=desc_button_layout) 
         desc_button11.style.button_color = 'lightgreen'
-        desc_button12 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button12 = Button(description='default=0.75' , tooltip='default=0.75', disabled=True, layout=desc_button_layout) 
         desc_button12.style.button_color = 'tan'
-        desc_button13 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button13 = Button(description='default=540.0' , tooltip='default=540.0', disabled=True, layout=desc_button_layout) 
         desc_button13.style.button_color = 'lightgreen'
-        desc_button14 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button14 = Button(description='default=135.0' , tooltip='default=135.0', disabled=True, layout=desc_button_layout) 
         desc_button14.style.button_color = 'tan'
-        desc_button15 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button15 = Button(description='default=405.0' , tooltip='default=405.0', disabled=True, layout=desc_button_layout) 
         desc_button15.style.button_color = 'lightgreen'
-        desc_button16 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button16 = Button(description='default=1954.0' , tooltip='default=1954.0', disabled=True, layout=desc_button_layout) 
         desc_button16.style.button_color = 'tan'
-        desc_button17 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button17 = Button(description='default=488.5' , tooltip='default=488.5', disabled=True, layout=desc_button_layout) 
         desc_button17.style.button_color = 'lightgreen'
-        desc_button18 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button18 = Button(description='default=1465.5' , tooltip='default=1465.5', disabled=True, layout=desc_button_layout) 
         desc_button18.style.button_color = 'tan'
-        desc_button19 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button19 = Button(description='default=0.0' , tooltip='default=0.0', disabled=True, layout=desc_button_layout) 
         desc_button19.style.button_color = 'lightgreen'
-        desc_button20 = Button(description='' , tooltip='', disabled=True, layout=desc_button_layout) 
+        desc_button20 = Button(description='default=3.6' , tooltip='default=3.6', disabled=True, layout=desc_button_layout) 
         desc_button20.style.button_color = 'tan'
         desc_button23 = Button(description='recommended method to change volume in your simulation' , tooltip='recommended method to change volume in your simulation', disabled=True, layout=desc_button_layout) 
         desc_button23.style.button_color = 'lightgreen'
