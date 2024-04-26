@@ -150,19 +150,18 @@ reset:
 	cp ./config/PhysiCell_settings-backup.xml ./config/PhysiCell_settings.xml 
 	
 # next 2 targets for nanoHUB
-install:
+install: 
 	. /etc/environ.sh; use -e -r anaconda3-5.1; make all
 	cp $(PROGRAM_NAME) ../bin
 
 distclean: clean
 	rm -f ../bin/$(PROGRAM_NAME)
 	rm -f ../bin/$(PROGRAM_NAME).exe
-	rm -rf ../.ipynb_checkpoints
 	rm -rf ../bin/__pycache__
+	rm -rf ../.ipynb_checkpoints
 
 clean:
 	rm -f *.o
-	rm -f modules/*.o
 	rm -f $(PROGRAM_NAME)
 	rm -f $(PROGRAM_NAME).exe
 	
@@ -194,3 +193,9 @@ unzip:
 untar: 
 	cp ./archives/latest.tar .
 	tar -xzf latest.tar
+
+animation:
+	cd output;magick mogrify -format jpg snapshot*.svg;magick snapshot*.jpg animation.gif
+    
+make notepad_edit:
+	notepad++ main.cpp ./config/PhysiCell_settings.xml ./custom_modules/custom.h ./custom_modules/custom.cpp
